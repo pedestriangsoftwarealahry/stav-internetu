@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sledování stavu Wi-Fi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sledování stavu Wi-Fi</h1>
+        <div class="current-status">
+            Stav aktuálně: <span class="status-text status-green">Vše funkční a v provozu.</span> <span class="status-text status-orange">Dočasné krátkodobé výpadky Wi-Fi Host.</span> </span> <span class="status-text status-red">Router vyžaduje restartovat pro zajištění vysokorychlostního připojení a dokončení aktualizace routeru - router odpojte z elektrické sítě, vyčkejte cca 1 minutu a zapojte jej zpět.</span>
+        </div>
+        <div class="flow-chart">
+            
+            <div class="node">
+                <i class="fas fa-globe-americas icon"></i>
+                <h2>Internet</h2>
+                <p>Celosvětová síť internet, média, temný kyberprostor, zprávy a vše, co denně děláme na telefonech, počítačích apod.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+            
+            <div class="node">
+                <i class="fas fa-network-wired icon"></i>
+                <h2>WLAN</h2>
+                <p>Globální kabelové propojení kontinentů a států a síť satelitů.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+            
+            <div class="node">
+                <i class="fas fa-server icon"></i>
+                <h2>Nordic Telecom s.r.o.</h2>
+                <p>Distributor a zpracovatel českého internetu a intranetu</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-exchange-alt arrow-bidirectional"></i>
+
+            <div class="node">
+                <i class="fas fa-satellite-dish icon"></i>
+                <h2>RIO Media</h2>
+                <p>Místní poskytovatel internetu (T-Mobile, Vodafone, nebo také menší poskytované internetu na obcích a vesnicích).</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+
+            <div class="node">
+                <i class="fas fa-home icon"></i>
+                <h2>Domácnost</h2>
+                <p>Internet dorazil do switche a je připraven na cestu domácností</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+
+            <div class="node">
+                <i class="fas fa-shield-alt icon"></i>
+                <h2>NTS Server</h2>
+                <p>Vnitřní softwarový server, který zajišťuje zabezpečení provozu Wi-Fi a kontrolu proti malwaru.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+
+            <div class="node">
+                <i class="fas fa-user-shield icon"></i>
+                <h2>Brána Firewall</h2>
+                <p>Brána, která skenuje stav síťové jednotky, udržuje provoz bezpečný, zajišťuje blokování škodlivým zařízením a zařízením s malwarem.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+            
+            <div class="node">
+                <i class="fas fa-door-open icon"></i>
+                <h2>Brána Gateway</h2>
+                <p>Přiřazuje hardwarové MAC adresy a náhodné MAC adresy pro vyšší zabezpečení a šifrování.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+            
+            <div class="node">
+                <i class="fas fa-lock icon"></i>
+                <h2>DNS Server</h2>
+                <p>Šifruje veškeré připojení a data sdílená přes router. Ani poskytovatel internetu nemůže zobrazit žádné Vaše aktivity na internetu.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+            
+            <div class="node">
+                <i class="fas fa-sync-alt icon"></i>
+                <h2>DHCP Server</h2>
+                <p>Provádí automatické aktualizace systému routeru pro zabezpečení proti vnějším útokům.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+            
+            <div class="node">
+                <i class="fas fa-shield-virus icon"></i>
+                <h2>Frame Delimeter</h2>
+                <p>Obsahuje záplaty proti útokům na síťovou jednotku a brání neoprávněnému přístupu. Mimo jiné se podílí na blokování malwaru.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+
+            <div class="node">
+                <i class="fas fa-hdd icon"></i>
+                <h2>Síťová jednotka</h2>
+                <p>Zde jsou vytvořeny samostatné routery - anonymní identity, které jsou od sebe odděleny a tak malwarová infekce jedné nezpůsobí infekci druhé ani druhé. Silné zabezpečení.</p>
+                <span class="status-text status-green">V pořádku.</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+
+            <div class="node">
+                <i class="fas fa-ethernet icon"></i>
+                <h2>Router</h2>
+                <p>Router řídí veškerou síťovou Wi-Fi komunikaci a provoz v rámci domácí sítě. Zajišťuje stabilní a rychlé připojení k internetu pro všechna zařízení.</p>
+                <span class="status-text status-red">Nutný restart</span>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+            
+            <div class="node wifi-node">
+                <i class="fas fa-wifi icon"></i>
+                <h2>Wi-Fi</h2>
+                <p>Jednotlivé sítě Wi-Fi:</p>
+                <ul class="wifi-list">
+                    <li>Wi-Fi Local <span class="status status-green">V provozu, bez problémů.</span></li>
+                    <li>Wi-Fi Local 5Ghz <span class="status status-green">V provozu, bez problémů.</span></li>
+                    <li>Wi-Fi_Host <span class="status status-orange">V provozu, s dočasnými krátkodobými výpadky připojení.</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h2 class="status-ok status-text status-green">Vše vypadá dobře, vše je v provozu. Není evidován žádný problém nebo výpadek internetu.</h2>
+            <p class="troubleshooting">Pokud internet nefunguje: Možná se jedná o typ výpadku, se kterým jsme se ještě nikdy nesetkali. Pokud internet nefunguje, vyčkejte cca 5 minut, pokud se internet sám neobnoví (může jít jen o aktualizaci nebo krátkodobý restart) a pokud i poté internet nefunguje, obraťte se na nts.podpora@gmail.com.</p>
+        </div>
+    </div>
+</body>
+</html>
